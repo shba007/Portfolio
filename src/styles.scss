@@ -5,6 +5,7 @@
   --primary-accent: #151a3d;
   --secondary: #1566b7;
   --secondary-accent: #1976d2;
+  --shadow: #1d2037;
 }
 
 *,
@@ -14,9 +15,10 @@
 }
 
 body {
+  margin: 0;
+  padding: 0;
   color: white;
-  // font-family: "Montserrat", sans-serif;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif; // font-family: "Montserrat", sans-serif;
   background-color: var(--secondary);
   overflow-x: hidden;
 }
