@@ -1,0 +1,50 @@
+:host {
+  position: relative;
+  z-index: 1;
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .brand {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "Montserrat", sans-serif;
+      font-size: 2rem;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: row;
+
+      li {
+        list-style: none;
+
+        a {
+          display: block;
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .nav-links {
+      a {
+        padding: 1rem;
+      }
+    }
+
+    .social-links {
+      a {
+        padding: 0.6rem;
+
+        img {
+          height: 2.4rem;
+          width: 2.4rem;
+        }
+      }
+    }
+  }
+}
