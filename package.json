@@ -6,7 +6,8 @@
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "tunnel": "ngrok http 4200 --region=in"
   },
   "private": true,
   "dependencies": {
