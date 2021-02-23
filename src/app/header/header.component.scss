@@ -20,6 +20,9 @@
     ul {
       display: flex;
       flex-direction: row;
+      align-items: center;
+      margin: 0;
+      padding: 0;
 
       li {
         list-style: none;
@@ -35,13 +38,19 @@
     .nav-links {
       a {
         padding: 1rem;
+        transition: color 300ms ease-in;
+
+        &:hover {
+          color: var(--secondary-accent);
+        }
       }
     }
 
     .social-links {
       a {
-        padding: 0.6rem;
+        padding: 0 0.6rem;
 
+        object,
         img {
           height: 2.4rem;
           width: 2.4rem;
