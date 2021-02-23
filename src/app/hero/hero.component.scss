@@ -1,0 +1,63 @@
+:host {
+  .hero-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 36px 0 0;
+
+    .texts {
+      .tags,
+      .quote {
+        margin: 0.4rem;
+        padding: 0;
+      }
+      .tags {
+        letter-spacing: 0.4rem;
+        font-size: 1rem;
+        font-weight: 500;
+        font-family: "Montserrat", sans-serif;
+        opacity: 0.8;
+      }
+      .quote {
+        font-size: 3rem;
+        font-weight: 400;
+        line-height: 4rem;
+      }
+      .underline {
+        position: absolute;
+        width: 11.4rem;
+        height: 11.4rem;
+        transform: translate(216px, -96px);
+      }
+      .call-to-action {
+        margin: 16px 0;
+        padding: 8px 16px;
+        border: 0;
+        border-radius: 3rem;
+        outline: none;
+        color: white;
+        font-size: 1rem;
+        font-weight: 500;
+        font-family: "Montserrat", sans-serif;
+        background: var(--secondary-accent);
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.375);
+        cursor: pointer;
+      }
+    }
+    .laptop {
+      width: 25rem;
+      height: 25rem;
+    }
+  }
+  .scroll {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    transform: translateY(-16px);
+
+    img {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+}
