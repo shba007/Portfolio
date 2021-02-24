@@ -17,14 +17,14 @@
     padding: 0 80px;
     transform: translateY(-280px);
   }
-  /*   #skills {
+  #skills,
+  .hexagons {
     transform: translateY(-100px);
-  } */
+  }
   .hexagons {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(8, 1fr);
-    // height: 1168px;
+    grid-template-columns: repeat(12, 1fr);
     justify-content: space-between;
   }
 }

@@ -10,7 +10,7 @@
   <span id="skills" class="section-title">Technical Experiences</span>
   <div class="hexagons">
     <app-hexagon *ngFor="let technology of technologies;index as i" [technology]="technology"
-      [ngStyle]="{ gridRow: technology.offset.y+'/ span 2', gridColumn: technology.offset.x+'/ span 2'}">
+      [ngStyle]="{ gridRow: technology.offset.y+'/span 3', gridColumn: technology.offset.x+'/span 2'}">
     </app-hexagon>
   </div>
 </app-section>
