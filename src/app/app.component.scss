@@ -1,0 +1,20 @@
+:host {
+  app-section:nth-child(2) {
+    margin: 384px 0;
+  }
+  .section-title {
+    margin: 36px auto;
+    letter-spacing: 0.4rem;
+    font-size: 0.8rem;
+    font-family: "Montserrat", sans-serif;
+  }
+  #work {
+    transform: translateY(-380px);
+  }
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 80px;
+    transform: translateY(-280px);
+  }
+}
