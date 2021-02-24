@@ -2,3 +2,14 @@
   <app-header></app-header>
   <app-hero></app-hero>
 </app-section>
+<app-section>
+  <span id="work" class="section-title">Feature Projects</span>
+  <div class="cards">
+    <app-card *ngFor="let project of projects" [project]="project"></app-card>
+  </div>
+  <span id="skills" class="section-title">Technical Experiences</span>
+  <div class="hexagons">
+  </div>
+</app-section>
+<app-section>
+</app-section>
