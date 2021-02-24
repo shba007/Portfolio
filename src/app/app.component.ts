@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 import projects from './database/projects.json';
+import technologies from './database/technologies.json';
 
 @Component({
   selector: 'app-root',
@@ -10,4 +11,5 @@ import projects from './database/projects.json';
 export class AppComponent {
   title = 'portfolio';
   projects = projects;
+  technologies = technologies;
 }
