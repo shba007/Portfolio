@@ -7,7 +7,9 @@
   height: 300px;
   padding: 0 28px;
   border-radius: 16px;
-  background-color: var(--shadow);
+  background: rgba(25, 118, 210, 0.1);
+  //rgba(33, 115, 182, 0.05); // var(--shadow);
+  backdrop-filter: blur(20px);
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.375);
 
   .logo {

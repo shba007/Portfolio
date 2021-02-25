@@ -1,18 +1,16 @@
-<app-section>
+<div class="section">
   <app-header></app-header>
   <app-hero></app-hero>
-</app-section>
-<app-section>
+</div>
+<div class="section">
   <span id="work" class="section-title">Feature Projects</span>
   <div class="cards">
     <app-card *ngFor="let project of projects" [project]="project"></app-card>
   </div>
   <span id="skills" class="section-title">Technical Experiences</span>
   <div class="hexagons">
-    <app-hexagon *ngFor="let technology of technologies;index as i" [technology]="technology"
-      [ngStyle]="{ gridRow: technology.offset.y+'/span 3', gridColumn: technology.offset.x+'/span 2'}">
+    <app-hexagon *ngFor="let technology of technologies" [technology]="technology"
+      [ngStyle]="getAlign(technology.offset)">
     </app-hexagon>
   </div>
-</app-section>
-<app-section>
-</app-section>
+</div>
