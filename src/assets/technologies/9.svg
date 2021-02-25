@@ -1,24 +1,7 @@
 <svg width="232" height="232" viewBox="0 0 232 232" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0)" filter="url(#filter0_d)">
-<path d="M67.5914 46C70.4496 41.0496 75.7316 38 81.4478 38L150.973 38C156.689 38 161.971 41.0496 164.829 46L199.591 106.21C202.45 111.161 202.45 117.26 199.591 122.21L164.829 182.42C161.971 187.371 156.689 190.42 150.973 190.42L81.4478 190.42C75.7316 190.42 70.4496 187.371 67.5914 182.42L32.829 122.21C29.9709 117.26 29.9709 111.161 32.829 106.21L67.5914 46Z" fill="#1D2037"/>
 <path d="M83.7125 58H88.7438V62.9875H93.3813V58H98.4125V73.0938H93.3813V68.0625H88.7875V73.0938H83.7125V58ZM105.063 63.0312H100.622V58H114.556V63.0312H110.094V73.0938H105.063V63.0312ZM116.766 58H122.038L125.275 63.3156L128.513 58H133.784V73.0938H128.753V65.6125L125.231 71.0375L121.709 65.6125V73.0938H116.766V58ZM136.278 58H141.309V68.1062H148.441V73.0938H136.278" fill="white"/>
 <path d="M83.5375 161.031L76.3187 80.0061H155.681L148.462 160.987L115.934 170" fill="#E44D26"/>
 <path d="M116 163.109V86.6562H148.441L142.25 155.781" fill="#F16529"/>
 <path d="M91.0625 96.5657H116V106.497H101.956L102.875 116.669H116V126.578H93.775L91.0625 96.5657ZM94.2125 131.566H104.188L104.887 139.506L116 142.481V152.85L95.6125 147.163" fill="#EBEBEB"/>
 <path d="M140.85 96.5657H115.956V106.497H139.931L140.85 96.5657ZM139.034 116.669H115.956V126.6H128.206L127.047 139.506L115.956 142.481V152.806L136.3 147.163" fill="white"/>
-</g>
-<defs>
-<filter id="filter0_d" x="0" y="0" width="232" height="232" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-<feOffset dy="2"/>
-<feGaussianBlur stdDeviation="10"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.375 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-</filter>
-<clipPath id="clip0">
-<rect width="192" height="192" fill="white" transform="translate(20 18)"/>
-</clipPath>
-</defs>
 </svg>
