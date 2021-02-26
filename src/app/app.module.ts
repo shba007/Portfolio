@@ -6,6 +6,7 @@ import { HeaderComponent } from './header/header.component';
 import { HeroComponent } from './hero/hero.component';
 import { CardComponent } from './card/card.component';
 import { HexagonComponent } from './hexagon/hexagon.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { HexagonComponent } from './hexagon/hexagon.component';
     HeroComponent,
     CardComponent,
     HexagonComponent,
+    ContactComponent,
   ],
   imports: [BrowserModule],
   providers: [],

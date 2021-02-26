@@ -18,7 +18,9 @@
     margin: 384px 0 96px;
   }
   .dark:last-child {
-    margin-top: 96px;
+    margin-top: 192px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
   .title {
     margin: 36px auto;
@@ -47,13 +49,21 @@
   }
   .light {
     align-items: center;
+  }
+  #about {
+    font-size: 2rem;
 
-    #about {
-      font-size: 2rem;
-
-      strong {
-        font-family: "Montserrat", sans-serif;
-      }
+    strong {
+      font-family: "Montserrat", sans-serif;
     }
+  }
+  #contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  img {
+    width: 55%;
+    height: 55%;
   }
 }
