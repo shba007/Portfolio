@@ -1,16 +1,25 @@
-<div class="section">
+<div class="section dark">
   <app-header></app-header>
   <app-hero></app-hero>
 </div>
-<div class="section">
-  <span id="work" class="section-title">Feature Projects</span>
+<div class="section dark">
+  <span id="work" class="title">Feature Projects</span>
   <div class="cards">
     <app-card *ngFor="let project of projects" [project]="project"></app-card>
   </div>
-  <span id="skills" class="section-title">Technical Experiences</span>
+  <span id="skills" class="title">Technical Experiences</span>
   <div class="hexagons">
     <app-hexagon *ngFor="let technology of technologies" [technology]="technology"
       [ngStyle]="getAlign(technology.offset)">
     </app-hexagon>
   </div>
+</div>
+<div class="section light">
+  <p id="about">
+    I hate two types of people one who <br>
+    uses <strong>Light Theme</strong> other one who <br>
+    uses <strong>Online IDE</strong> for coding. <br>
+  </p>
+</div>
+<div class="section dark">
 </div>

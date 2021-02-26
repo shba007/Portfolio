@@ -3,10 +3,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 2.2rem;
   padding: 0.6rem;
-  background: url("/assets/hexagon.svg") no-repeat center;
-  background-size: contain;
+
+  .background {
+    position: absolute;
+    width: 112px;
+    height: 112px;
+    z-index: -1;
+  }
 
   object,
   img {
