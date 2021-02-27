@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
-import projects from './database/projects.json';
-import technologies from './database/technologies.json';
+import projects from '../assets/database/projects.json';
+import technologies from '../assets/database/technologies.json';
 
 import { Project } from './models/project.model';
 import { Technology } from './models/technologies.model';

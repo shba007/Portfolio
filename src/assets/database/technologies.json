@@ -1,0 +1,101 @@
+[
+  {
+    "title": "C",
+    "type": "Language",
+    "path": "assets/technologies/1.svg",
+    "offset": {
+      "x": 9,
+      "y": 4
+    }
+  },
+  {
+    "title": "C++",
+    "type": "Language",
+    "path": "assets/technologies/2.svg",
+    "offset": {
+      "x": 8,
+      "y": 5
+    }
+  },
+  {
+    "title": "TensorFlow",
+    "type": "Library",
+    "path": "assets/technologies/3.svg",
+    "offset": {
+      "x": 7,
+      "y": 4
+    }
+  },
+  {
+    "title": "Node.js",
+    "type": "Runtime Environment",
+    "path": "assets/technologies/4.svg",
+    "offset": {
+      "x": 7,
+      "y": 2
+    }
+  },
+  {
+    "title": "Python",
+    "type": "Language",
+    "path": "assets/technologies/5.svg",
+    "offset": {
+      "x": 6,
+      "y": 3
+    }
+  },
+  {
+    "title": "Angular",
+    "type": "Framework",
+    "path": "assets/technologies/6.svg",
+    "offset": {
+      "x": 5,
+      "y": 2
+    }
+  },
+  {
+    "title": "TypeScript",
+    "type": "Language",
+    "path": "assets/technologies/7.svg",
+    "offset": {
+      "x": 4,
+      "y": 3
+    }
+  },
+  {
+    "title": "JavaScript",
+    "type": "Language",
+    "path": "assets/technologies/8.svg",
+    "offset": {
+      "x": 4,
+      "y": 5
+    }
+  },
+  {
+    "title": "HTML",
+    "type": "Language",
+    "path": "assets/technologies/9.svg",
+    "offset": {
+      "x": 5,
+      "y": 6
+    }
+  },
+  {
+    "title": "CSS",
+    "type": "Language",
+    "path": "assets/technologies/10.svg",
+    "offset": {
+      "x": 3,
+      "y": 6
+    }
+  },
+  {
+    "title": "SCSS",
+    "type": "Language",
+    "path": "assets/technologies/11.svg",
+    "offset": {
+      "x": 2,
+      "y": 5
+    }
+  }
+]

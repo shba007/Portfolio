@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Resistance Calculator",
+    "path": "assets/projects/1.svg",
+    "details": "A CUI written on C which calculates resistance from color code",
+    "link": "https://github.com/shba007/Resistance-Calculator"
+  },
+  {
+    "title": "Rouge AI Game",
+    "path": "assets/projects/2.svg",
+    "details": "An Algorithm written in C which can easily beat you if you are not Logical",
+    "link": "https://github.com/shba007/Rouge-AI-Game"
+  },
+  {
+    "title": "Digit Recognizer",
+    "path": "assets/projects/3.svg",
+    "details": "A web based single digit recognizer based on MNIST dataset",
+    "link": "https://github.com/shba007/Digit-Recognizer"
+  },
+  {
+    "title": "Ntertainer",
+    "path": "assets/projects/4.svg",
+    "details": "A tracker, organizer and a suggester for your Entertainment ",
+    "link": ""
+  }
+]
