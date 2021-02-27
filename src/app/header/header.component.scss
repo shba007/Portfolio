@@ -2,58 +2,72 @@
   position: relative;
   z-index: 1;
 
-  .navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-    .brand {
+  header {
+    nav {
       display: flex;
       align-items: center;
-      justify-content: center;
-      color: var(--secondary-accent);
-      font-size: 2rem;
-      font-weight: 500;
-      font-family: "Montserrat", sans-serif;
-    }
+      justify-content: space-between;
 
-    ul {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      margin: 0;
-      padding: 0;
+      .brand a {
+        color: var(--secondary-accent);
+        font-size: 2rem;
+        font-weight: 500;
+        font-family: "Montserrat", sans-serif;
+        text-transform: capitalize;
+        text-decoration: none;
+        cursor: pointer;
+      }
 
-      li {
+      ul {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
         list-style: none;
 
-        a {
-          display: block;
-          color: white;
-          text-decoration: none;
+        li {
+          display: flex;
+          align-items: center;
+
+          a {
+            color: white;
+            text-decoration: none;
+          }
         }
       }
-    }
 
-    .nav-links {
-      a {
-        padding: 1rem;
-        transition: color 300ms ease-in;
+      .nav-links {
+        li {
+          margin: 0 1rem;
 
-        &:hover {
-          color: var(--secondary-accent);
+          a {
+            transition: color 0.3s ease-in;
+
+            &:hover {
+              color: var(--secondary-accent);
+            }
+          }
         }
       }
-    }
 
-    .social-links {
-      a {
-        padding: 0 0.6rem;
+      .social-links {
+        li {
+          margin: 0 0.8rem;
 
-        object,
-        img {
-          height: 2.4rem;
-          width: 2.4rem;
+          a {
+            display: flex;
+            transition: opacity 0.3s ease-in;
+
+            &:hover {
+              opacity: 0.6;
+            }
+
+            object,
+            img {
+              height: 1.8rem;
+              width: 1.8rem;
+            }
+          }
         }
       }
     }
