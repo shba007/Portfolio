@@ -8,14 +8,22 @@
   padding: 0 28px;
   border-radius: 16px;
   background: rgba(25, 118, 210, 0.1);
-  //rgba(33, 115, 182, 0.05); // var(--shadow);
   backdrop-filter: blur(20px);
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.375);
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: translateY(-5px) scale(1.05);
+  }
 
   .logo {
     width: 6rem;
     height: 6rem;
     transform: translateY(-40px);
+    transition: transform 0.2s ease;
+  }
+  &:hover > .logo {
+    transform: translateY(-40px) scale(1.1);
   }
   .title {
     text-align: center;
@@ -30,24 +38,23 @@
     font-weight: 300;
     letter-spacing: 2px;
   }
-  a {
+  .star {
     display: flex;
     align-items: center;
     gap: 4px;
-    border-radius: 16px;
     padding: 4px 12px;
-    text-decoration: none;
-    color: white;
     font-size: 0.85rem;
     font-weight: 500;
-    font-family: "Montserrat", sans-serif;
-    background-color: var(--secondary-accent);
     transform: translateY(12px);
+    transition: transform 0.2s ease;
 
     object,
     img {
       height: 1rem;
       width: 1rem;
     }
+  }
+  &:hover > .star {
+    transform: translateY(12px) scale(1.05);
   }
 }
