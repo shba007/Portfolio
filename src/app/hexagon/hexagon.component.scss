@@ -17,4 +17,45 @@
     width: 144px;
     height: 144px;
   }
+
+  .tooltip {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    cursor: pointer;
+    z-index: 1;
+
+    &::before,
+    &::after {
+      --scale: 0;
+      position: absolute;
+      top: -1.4rem;
+      left: 50%;
+      transform: translate(-50%, var(--offset-y)) scale(var(--scale));
+      transition: transform 0.1s ease-in;
+      transform-origin: bottom center;
+      z-index: 1;
+    }
+
+    &::before {
+      --offset-y: calc(-100% - 8px);
+      content: attr(data-content);
+      height: max-content;
+      width: max-content;
+      padding: 0.2rem 0.5rem;
+      border-radius: 0.5rem;
+      text-align: center;
+      background: var(--primary-accent);
+    }
+    &::after {
+      --offset-y: calc(-1 * 8px);
+      content: "";
+      border: 8px solid transparent;
+      border-top-color: var(--primary-accent);
+    }
+    &:hover::before,
+    &:hover::after {
+      --scale: 1;
+    }
+  }
 }
