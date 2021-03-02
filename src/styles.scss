@@ -20,6 +20,25 @@ body {
   font-family: "Poppins", sans-serif; // font-family: "Montserrat", sans-serif;
   background-color: var(--secondary);
   overflow-x: hidden;
+
+  .primary-btn {
+    border: 0;
+    border-radius: 3rem;
+    outline: none;
+    text-decoration: none;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    background: var(--secondary-accent);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.375);
+    cursor: pointer;
+
+    &:hover {
+      background: linear-gradient(180deg, #1976d2 0%, #1669bb 100%), #1976d2;
+    }
+    &:active {
+      background: linear-gradient(0deg, #1976d2 0%, #1669bb 100%), #1976d2;
+    }
+  }
 }
 
 ::-webkit-scrollbar {
