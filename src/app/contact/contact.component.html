@@ -1,5 +1,8 @@
 <h3>Contact Form</h3>
-<input type="text" placeholder="Name">
-<input type="text" placeholder="Email">
-<textarea type="text" placeholder="Message"></textarea>
-<button>Send</button>
+<form (ngSubmit)="onSubmit(f)" #f="ngForm">
+  <input name="name" type="text" placeholder="Name" required ngModel
+    pattern="^([a-zA-Z]{2,}\s[a-zA-Z]{1,}'?-?[a-zA-Z]{2,}\s?([a-zA-Z]{1,})?)">
+  <input name="email" type="text" placeholder="Email" required ngModel pattern="^[^\s@]+@[^\s@]+$">
+  <textarea name="message" type="text" placeholder="Message" required ngModel></textarea>
+  <input class="primary-btn" type="submit" value="Send" [disabled]="!f.valid">
+</form>
