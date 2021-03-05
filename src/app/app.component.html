@@ -1,8 +1,8 @@
-<div class="section dark">
+<section class="dark">
   <app-header></app-header>
   <app-hero></app-hero>
-</div>
-<div class="section dark">
+</section>
+<section class="dark">
   <span id="work" class="title">Feature Projects</span>
   <div class="cards">
     <app-card *ngFor="let project of projects" [project]="project"></app-card>
@@ -13,17 +13,17 @@
       [ngStyle]="getAlign(technology.offset)">
     </app-hexagon>
   </div>
-</div>
-<div class="section light">
+</section>
+<section class="light">
   <p id="about">
     I hate two types of people one who <br>
     uses <strong>Light Theme</strong> other one who <br>
     uses <strong>Online IDE</strong> for coding. <br>
   </p>
-</div>
-<div class="section dark">
+</section>
+<section class="dark">
   <div id="contact">
     <app-contact></app-contact>
-    <img src="assets/photo.svg" alt="photo">
+    <img src="assets/photo.png" alt="photo">
   </div>
-</div>
+</section>
