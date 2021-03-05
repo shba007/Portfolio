@@ -28,15 +28,23 @@ body {
     text-decoration: none;
     color: white;
     font-family: "Montserrat", sans-serif;
-    background: var(--secondary-accent);
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.375);
-    cursor: pointer;
 
-    &:hover {
-      background: linear-gradient(180deg, #1976d2 0%, #1669bb 100%), #1976d2;
+    &:not(:disabled) {
+      background: var(--secondary-accent);
+      box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.375);
+      cursor: pointer;
+
+      &:hover {
+        background: linear-gradient(180deg, #1976d2 0%, #1669bb 100%), #1976d2;
+      }
+      &:active {
+        background: linear-gradient(0deg, #1976d2 0%, #1669bb 100%), #1976d2;
+      }
     }
-    &:active {
-      background: linear-gradient(0deg, #1976d2 0%, #1669bb 100%), #1976d2;
+
+    &:disabled {
+      background-color: var(--primary-accent);
+      cursor: not-allowed;
     }
   }
 }
