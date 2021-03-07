@@ -1,10 +1,4 @@
-import {
-  AfterViewInit,
-  Component,
-  ElementRef,
-  OnInit,
-  ViewChild,
-} from '@angular/core';
+import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 import Typewriter from 'typewriter-effect/dist/core';
 
 @Component({
@@ -12,15 +6,29 @@ import Typewriter from 'typewriter-effect/dist/core';
   templateUrl: './hero.component.html',
   styleUrls: ['./hero.component.scss'],
 })
-export class HeroComponent implements OnInit, AfterViewInit {
+export class HeroComponent implements AfterViewInit {
   @ViewChild('textContent') textContent: ElementRef;
 
   constructor() {}
-  ngOnInit(): void {}
   ngAfterViewInit(): void {
     const textElem = this.textContent.nativeElement;
     const typewriter = new Typewriter(textElem);
-
+    /* typewriter
+      .pause(2500)
+      .type('Following the <br>"Logical Sequential Steps" <br>to avoid')
+      .pause(50)
+      .type('Failure')
+      .pause(300)
+      .delete(7)
+      .pause(500)
+      .type('Error')
+      .pause(250)
+      .delete(5)
+      .pause(1500)
+      .type('Failure+Error')
+      .replace(13, '<span class="highlight">FailError</span>')
+      .start();
+ */
     typewriter
       .pauseFor(2500)
       .typeString('Following the <br>"Logical Sequential Steps" <br>to avoid ')
@@ -33,9 +41,9 @@ export class HeroComponent implements OnInit, AfterViewInit {
       .pauseFor(250)
       .deleteChars(5)
       .pauseFor(1500)
-      .typeString(`<span class="highlight">Failure+Error</span>`)
+      .typeString(`<span id="highlight">Failure+Error</span>`)
       .callFunction(() => {
-        textElem.querySelector('.highlight').textContent = 'FailError';
+        textElem.querySelector('#highlight').textContent = 'FailError';
       })
       .start();
   }
