@@ -17,36 +17,43 @@ export class ContactComponent implements OnInit {
   ngOnInit(): void {}
 
   onSubmit(form: NgForm) {
+    const value = form.value;
+    form.reset();
     // Send to Dev email
     emailjs
       .send(
         environment.SERVICE_ID,
         environment.TEMPLATE_ID.dev,
-        form.value,
+        value,
         environment.USER_ID
       )
       .then((result) => {
-        console.log(result.text);
+        console.log(
+          result.text === 'OK' ? 'The Dev email Send Successfully' : result.text
+        );
+        // Send to User email
+        emailjs
+          .send(
+            environment.SERVICE_ID,
+            environment.TEMPLATE_ID.user,
+            value,
+            environment.USER_ID
+          )
+          .then((result) => {
+            console.log(
+              result.text === 'OK'
+                ? 'The User email Send Successfully'
+                : result.text
+            );
+            this.changeStatus();
+          })
+          .catch((error) => {
+            console.log(error.text);
+          });
       })
       .catch((error) => {
         console.log(error.text);
       });
-    // Send to User email
-    emailjs
-      .send(
-        environment.SERVICE_ID,
-        environment.TEMPLATE_ID.dev,
-        form.value,
-        environment.USER_ID
-      )
-      .then((result) => {
-        console.log(result.text);
-      })
-      .catch((error) => {
-        console.log(error.text);
-      });
-
-    this.changeStatus();
   }
   changeStatus() {
     this.visible = true;
