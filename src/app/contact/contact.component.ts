@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
+import { environment } from '../../environments/environment';
+
 import emailjs from 'emailjs-com';
-import apiKeys from '../others/apiKeys';
 
 @Component({
   selector: 'app-contact',
@@ -19,10 +20,10 @@ export class ContactComponent implements OnInit {
     // Send to Dev email
     emailjs
       .send(
-        apiKeys.SERVICE_ID,
-        apiKeys.TEMPLATE_ID.dev,
+        environment.SERVICE_ID,
+        environment.TEMPLATE_ID.dev,
         form.value,
-        apiKeys.USER_ID
+        environment.USER_ID
       )
       .then((result) => {
         console.log(result.text);
@@ -33,10 +34,10 @@ export class ContactComponent implements OnInit {
     // Send to User email
     emailjs
       .send(
-        apiKeys.SERVICE_ID,
-        apiKeys.TEMPLATE_ID.user,
+        environment.SERVICE_ID,
+        environment.TEMPLATE_ID.dev,
         form.value,
-        apiKeys.USER_ID
+        environment.USER_ID
       )
       .then((result) => {
         console.log(result.text);
