@@ -1,8 +1,12 @@
+<div class="status" *ngIf='visible'>
+  <p>The email has been sent successfully</p>
+  <span (click)='onClose()'>&times;</span>
+</div>
 <h3>Contact Form</h3>
-<form (ngSubmit)="onSubmit(f)" #f="ngForm">
+<form (ngSubmit)="onSubmit(form)" #form="ngForm">
   <input name="name" type="text" placeholder="Name" required ngModel
     pattern="^([a-zA-Z]{2,}\s[a-zA-Z]{1,}'?-?[a-zA-Z]{2,}\s?([a-zA-Z]{1,})?)">
   <input name="email" type="text" placeholder="Email" required ngModel pattern="^[^\s@]+@[^\s@]+$">
   <textarea name="message" type="text" placeholder="Message" required ngModel></textarea>
-  <input class="primary-btn" type="submit" value="Send" [disabled]="!f.valid">
+  <input class="primary-btn" type="submit" value="Send" [disabled]="!form.valid">
 </form>

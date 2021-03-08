@@ -12,6 +12,39 @@
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.375);
   transform: translateY(-10%);
 
+  /* The alert message box */
+  .status {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.25rem;
+    border-radius: 8px;
+    background-color: #4caf50;
+    z-index: 3;
+    transform: translateY(-150%);
+
+    p {
+      padding: 0;
+      margin: 0;
+    }
+    /* The close button */
+    span {
+      color: white;
+      font-weight: bold;
+      font-size: 22px;
+      cursor: pointer;
+      transition: color 0.3s ease-in;
+
+      /* When moving the mouse over the close button */
+      &:hover {
+        color: var(--primary);
+      }
+    }
+  }
+
   h3 {
     margin: 1.2rem 0 0.8rem;
     font-size: 1.8rem;

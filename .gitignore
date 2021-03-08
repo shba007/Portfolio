@@ -45,5 +45,4 @@ testem.log
 .DS_Store
 Thumbs.db
 
-# Database
-/src/app/database
+/src/app/others
