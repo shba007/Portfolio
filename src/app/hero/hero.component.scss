@@ -24,7 +24,7 @@
         font-weight: 400;
         line-height: 4rem;
 
-        &:after {
+        /* &:after {
           content: "";
           position: absolute;
           margin-left: 4px;
@@ -33,7 +33,7 @@
           border-right: 4px solid whitesmoke;
           transform: translateY(0.3rem);
           animation: blink 1s infinite ease;
-        }
+        } */
 
         #highlight {
           position: relative;
