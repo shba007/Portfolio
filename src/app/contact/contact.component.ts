@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
-import { environment } from '../../environments/environment';
+import { Email } from '../models/email.model';
 
 import emailjs from 'emailjs-com';
 
@@ -11,6 +11,7 @@ import emailjs from 'emailjs-com';
   styleUrls: ['./contact.component.scss'],
 })
 export class ContactComponent implements OnInit {
+  @Input() email: Email;
   visible = false;
 
   constructor() {}
@@ -22,10 +23,10 @@ export class ContactComponent implements OnInit {
     // Send to Dev email
     emailjs
       .send(
-        environment.SERVICE_ID,
-        environment.TEMPLATE_ID.dev,
+        this.email.SERVICE_ID,
+        this.email.TEMPLATE_ID_DEV,
         value,
-        environment.USER_ID
+        this.email.USER_ID
       )
       .then((result) => {
         console.log(
@@ -34,10 +35,10 @@ export class ContactComponent implements OnInit {
         // Send to User email
         emailjs
           .send(
-            environment.SERVICE_ID,
-            environment.TEMPLATE_ID.user,
+            this.email.SERVICE_ID,
+            this.email.TEMPLATE_ID_USER,
             value,
-            environment.USER_ID
+            this.email.USER_ID
           )
           .then((result) => {
             console.log(
