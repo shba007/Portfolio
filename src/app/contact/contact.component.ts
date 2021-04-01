@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
-import { Email } from '../models/email.model';
+import { environment as env } from '../../environments/environment';
 
 import emailjs from 'emailjs-com';
 
@@ -11,50 +11,41 @@ import emailjs from 'emailjs-com';
   styleUrls: ['./contact.component.scss'],
 })
 export class ContactComponent implements OnInit {
-  @Input() email: Email;
   visible = false;
 
   constructor() {}
   ngOnInit(): void {}
 
-  onSubmit(form: NgForm) {
+  async onSubmit(form: NgForm) {
     const value = form.value;
     form.reset();
+
     // Send to Dev email
-    emailjs
-      .send(
-        this.email.SERVICE_ID,
-        this.email.TEMPLATE_ID_DEV,
+    try {
+      const result = await emailjs.send(
+        env.SERVICE_ID,
+        env.TEMPLATE_ID_DEV,
         value,
-        this.email.USER_ID
-      )
-      .then((result) => {
-        console.log(
-          result.text === 'OK' ? 'The Dev email Send Successfully' : result.text
-        );
-        // Send to User email
-        emailjs
-          .send(
-            this.email.SERVICE_ID,
-            this.email.TEMPLATE_ID_USER,
-            value,
-            this.email.USER_ID
-          )
-          .then((result) => {
-            console.log(
-              result.text === 'OK'
-                ? 'The User email Send Successfully'
-                : result.text
-            );
-            this.changeStatus();
-          })
-          .catch((error) => {
-            console.log(error.text);
-          });
-      })
-      .catch((error) => {
-        console.log(error.text);
-      });
+        env.USER_ID
+      );
+      console.log(result);
+    } catch (err) {
+      console.log(err);
+    }
+    // Send to User email
+    try {
+      const result = await emailjs.send(
+        env.SERVICE_ID,
+        env.TEMPLATE_ID_USER,
+        value,
+        env.USER_ID
+      );
+      console.log(result);
+    } catch (err) {
+      console.log(err);
+    }
+
+    this.changeStatus();
   }
   changeStatus() {
     this.visible = true;

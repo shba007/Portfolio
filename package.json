@@ -1,9 +1,9 @@
 {
-  "name": "portfolio",
+  "name": "portfolio-client",
   "version": "0.0.0",
   "scripts": {
-    "start": "ng serve -o --disable-host-check",
-    "build": "ng build --aot --prod",
+    "start": "ng serve --open",
+    "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
