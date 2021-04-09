@@ -8,6 +8,7 @@ import { HeroComponent } from './hero/hero.component';
 import { CardComponent } from './card/card.component';
 import { HexagonComponent } from './hexagon/hexagon.component';
 import { ContactComponent } from './contact/contact.component';
+import { LoaderComponent } from './loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { ContactComponent } from './contact/contact.component';
     CardComponent,
     HexagonComponent,
     ContactComponent,
+    LoaderComponent,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],
